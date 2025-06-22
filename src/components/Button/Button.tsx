@@ -1,8 +1,11 @@
+// import Libraries
+import cn from "classnames";
+
+// App imports
 import type { ButtonProps } from "./types/Button.type";
 
+// import Styles
 import styles from "./Button.module.css";
-
-import cn from "classnames";
 
 export function Button({ children, className, ...props }: ButtonProps) {
   return (

@@ -1,4 +1,13 @@
 /* Reset and base styles  */
+:root {
+  --primary: #fff;
+  --accent: #fe724c;
+  --accent-hover: #f54d1f;
+  --text: #000;
+  --secondary-text: #9796a1;
+  --shadow-color: #fe734c7e;
+}
+
 * {
   padding: 0px;
   margin: 0px;
