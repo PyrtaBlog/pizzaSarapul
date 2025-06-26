@@ -1,25 +1,10 @@
 import "./App.css";
 import { Button } from "./components/Button/Button";
 import { Input } from "./components/Input/Input";
-import { MainPage } from "./Layout/MainPage";
-import { LoginPage } from "./Layout/LoginPage";
-import { NotFound } from "./Layout/NotFound";
+import { MainPage } from "./pages/MainPage";
+import { LoginPage } from "./pages/LoginPage";
+import { NotFound } from "./pages/NotFound";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainPage />,
-  },
-  {
-    path: "/login",
-    element: <LoginPage />,
-  },
-  {
-    path: "*",
-    element: <NotFound />,
-  },
-]);
 
 function App() {
   return (
@@ -30,11 +15,6 @@ function App() {
         </Button>
         <Input placeholder="Email" />
       </div>
-      <nav className="menu">
-        <a href="/">Home</a>
-        <a href="/login">Login</a>
-      </nav>
-      <RouterProvider router={router} />
     </>
   );
 }
