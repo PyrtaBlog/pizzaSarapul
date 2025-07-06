@@ -9,9 +9,6 @@ export function Layout() {
           <Link to="/login">Login</Link>
         </nav>
       </section>
-      <section>
-        <Outlet />
-      </section>
     </div>
   );
 }

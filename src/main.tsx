@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { MainPage } from "./pages/MainPage.tsx";
-import { LoginPage } from "./pages/LoginPage.tsx";
+import { CartPage } from "./pages/CartPage.tsx";
 import { NotFound } from "./pages/NotFound.tsx";
 import { MenuLayout } from "./Layout/Menu/MenuLayout.tsx";
 
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <MenuLayout />,
     children: [
       { path: "/", element: <MainPage /> },
-      { path: "/login", element: <LoginPage /> },
+      { path: "/cart", element: <CartPage /> },
     ],
   },
 
