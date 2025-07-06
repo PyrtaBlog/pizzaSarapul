@@ -5,12 +5,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { MainPage } from "./pages/MainPage.tsx";
 import { LoginPage } from "./pages/LoginPage.tsx";
 import { NotFound } from "./pages/NotFound.tsx";
-import { Layout } from "./Layout/Layout.tsx";
+import { MenuLayout } from "./Layout/Menu/MenuLayout.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <MenuLayout />,
     children: [
       { path: "/", element: <MainPage /> },
       { path: "/login", element: <LoginPage /> },

@@ -5,6 +5,9 @@
   font-weight: 600;
   box-shadow: 0 5px 60px var(--shadow-color);
   transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .buttonPrimary {
