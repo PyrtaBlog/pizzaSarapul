@@ -49,7 +49,7 @@ export function MenuLayout() {
           </Button>
         </div>
       </div>
-      <section>
+      <section className={styles.body}>
         <Outlet />
       </section>
     </div>
